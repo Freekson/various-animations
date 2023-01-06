@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 60vh;
+    display: flex;
+    font-size: 16px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.form {
+    width: 50%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    /* background: blue; */
+    input {
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+    }
+    label {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        /* background: blue; */
+        pointer-events: none;  
+        border-bottom: 1px solid black;
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -2px;
+            height: 100%;
+            width: 100%;
+            border-bottom: 3px solid cornflowerblue;
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        .content-name {
+            position: absolute;
+            bottom: 5px;
+            left: 0px;
+            transition: all 0.3s ease;
+        }
+    }
+
+}
+.form input:focus + .label-name .content-name,
+.form input:valid + .label-name .content-name {
+    transform: translateY(-150%);
+    font-size: 14px;
+    color: cornflowerblue;
+}
+.form input:focus + .label-name::after,
+.form input:valid{
+    transform: translateX(0%);
+}
