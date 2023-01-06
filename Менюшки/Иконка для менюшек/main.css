@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B132B;
+}
+
+.menu {
+  position: fixed;
+  cursor: pointer;
+  width: 40px;
+  height: 30px;
+  transform: scale(4);
+}
+.menu .line {
+  position: absolute;
+  transform-origin: center;
+  width: 100%;
+  height: 4px;
+  transition: 0.2s;
+  background: #FFFFFF;
+}
+.menu .line:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu .line:nth-child(3) {
+  bottom: 0;
+}
+.menu.open .line:nth-child(2) {
+  transform: translateX(50%);
+  opacity: 0;
+  visibility: hidden;
+}
+.menu.open .line:nth-child(1) {
+  transform: translateY(13px) rotate(45deg);
+}
+.menu.open .line:nth-child(3) {
+  transform: translateY(-13px) rotate(-45deg);
+}/*# sourceMappingURL=main.css.map */
