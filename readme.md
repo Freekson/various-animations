@@ -30,6 +30,7 @@
             <li><a href="#Hover-effects">Hover effects for buttons</a></li>
             <li><a href="#Neon-btn">Neon Light Button</a></li>
             <li><a href="#Effect-links">Effects for links</a></li>
+             <li><a href="#Arrow-hover">Button with arrow on hover</a></li>
         </ul>
     </li>
     <li>
@@ -89,27 +90,32 @@
 
 # Effects for links
 
-![Effect-links"](readme-source/chrome_GKIDNpO2JW.gif)
+![Effect-links](readme-source/chrome_GKIDNpO2JW.gif)
 
+<div id="Arrow-hover"></div>
+
+# Button with arrow on hover
+
+![Arrow-hover](readme-source/chrome_LPBd7UdeU1.gif)
 
 <div id="Animations-menu"></div>
 
 # Animations for menu
 
-![Animations for menu"](readme-source/chrome_4uiXqMgx2H.gif)
+![Animations for menu](readme-source/chrome_4uiXqMgx2H.gif)
 
 
 <div id="Icon-animation"></div>
 
 # Icon animation
 
-!["Icon animation"](readme-source/chrome_9iOYp9Ao0d.gif)
+![Icon animation](readme-source/chrome_9iOYp9Ao0d.gif)
 
 <div id="Modal-window"></div>
 
 # Modal window
 
-!["Icon animation"](readme-source/chrome_SgGfl7Oxgz.gif)
+![Icon animation](readme-source/chrome_SgGfl7Oxgz.gif)
 
 
 

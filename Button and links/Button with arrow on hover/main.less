@@ -1,0 +1,88 @@
+* {
+    box-sizing: border box;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @black: #1d1d1d;
+  .btn,
+  button {
+    background: @black;
+    color: white;
+    border: none;
+    font-size: 10px;
+    font-size: 1rem;
+    background-color: @black;
+    color: white;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 14px 21px;
+    padding: 1.4rem 2.1rem;
+    border: 2px solid @black;
+    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1), background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    min-width: 200px;
+    min-width: 20rem;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    @media (min-width: 400px) {
+      width: auto;
+    }
+    @media (min-width: 800px) {
+      font-size: 1.1rem;
+      padding: 1.6rem 2.8rem;
+    }
+    &:hover {
+      background: lighten(@black, 5%);
+      border-color: lighten(@black, 5%);
+      color: #fff;
+    }
+  }
+  
+  .btn-border {
+    background-color: transparent;
+    color: @black;
+  }
+  
+  .btn-arrow {
+    position: relative;
+      transition: background-color 300ms ease-out;
+    span {
+      display: inline-block;
+      position: relative;
+      transition: all 300ms ease-out;
+      will-change: transform;
+    }
+    &:hover span {
+      transform: translate3d(-1rem, 0, 0);
+    }
+    svg {
+      position: absolute;
+      width: 1.1em;
+      right: 0px;
+      right: 0rem;
+      opacity: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 300ms ease-out;
+      will-change: right, opacity;
+      * {
+        stroke-width: 5;
+        stroke-color: transparent;
+      }
+    }
+    &:hover svg {
+      opacity: 1;
+      right: -2rem;
+    }
+  }
