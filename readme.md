@@ -41,6 +41,7 @@
         </ul>
     </li>
     <li><a href="#Modal-window">Modal window</a></li>
+    <li><a href="#Card-slider">Card slider</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
 
@@ -117,8 +118,11 @@
 
 ![Icon animation](readme-source/chrome_SgGfl7Oxgz.gif)
 
+<div id="Card-slider"></div>
 
+# Apline slider
 
+![Card slider](readme-source/chrome_nLPRB3wIpi.gif)
 # Contact
 
 Yehor Dreval 
